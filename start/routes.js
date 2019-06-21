@@ -21,5 +21,12 @@ Route.get("/", () => {
 });
 
 /* ###################### AUTH ROUTES ###################### */
-Route.post("/auth/register", "AuthController.register").as("auth.register");
+Route.post("/auth/register", "AuthController.register");
 Route.post("/auth/login", "AuthController.login");
+
+/* ###################### TURMAS ############################### */
+
+
+/* ###################### ALUNOS  ############################### */
+Route.get("/student", "StudentController.get");
+Route.post("/student/create", "StudentController.create");
